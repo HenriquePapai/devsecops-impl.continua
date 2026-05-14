@@ -5,11 +5,11 @@ on:
 
 jobs:
   impantacao:
-  runs-on: self-hosted
-  name: "Implantação"
-  steps:
-    - uses: actions/checkout@v2
-    - name: "Deploy no Kubernetes"
-      run: kubectl apply -f deployment.yaml
-    - name: "Listando pods"
-      run: kubectl get pods
+    runs-on: self-hosted
+    name: "Implantação"
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Deploy no Kubernetes"
+        run: kubectl apply -f deployment.yaml
+      - name: "Listando pods"
+        run: kubectl get pods
