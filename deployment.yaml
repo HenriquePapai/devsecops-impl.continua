@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deploy-aula-14-05
@@ -18,4 +18,4 @@ spec:
       - name: nginx
         image: nginx
         ports:
-          - containerPorts: 80
+        - containerPort: 80
