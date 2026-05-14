@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: deploy-aula-14-05
   labels:
-    aula 14-05
+    aula: 14-05
 spec:
   replicas: 3
   selector:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-      image: nginx
-      ports:
-        - containerPorts: 80
+        image: nginx
+        ports:
+          - containerPorts: 80
